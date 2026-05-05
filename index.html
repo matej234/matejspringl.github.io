@@ -1,1 +1,82 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moje stránka</title>
 
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      max-width: 800px;
+      padding: 60px 20px;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #cbd5e1;
+      line-height: 1.6;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+
+    a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <h1>Ahoj, já jsem Tvoje Jméno 👋</h1>
+    <p>Student / vývojář / něco o tobě</p>
+
+    <div class="card">
+      <h2>O mně</h2>
+      <p>Tady napiš krátce kdo jsi, co děláš a co tě baví.</p>
+    </div>
+
+    <div class="card">
+      <h2>Skills</h2>
+      <p>HTML, CSS, Python, JavaScript...</p>
+    </div>
+
+    <div class="card">
+      <h2>Projekty</h2>
+      <p>
+        👉 <a href="https://github.com/">Můj GitHub</a><br>
+        👉 Sem můžeš dát svoje projekty
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Kontakt</h2>
+      <p>email: tvoje@email.com</p>
+    </div>
+
+  </div>
+</body>
+</html>
