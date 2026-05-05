@@ -48,7 +48,7 @@
 
     .tag {
       display: inline-block;
-      background: #334155;
+      background: radial-gradient(circle at top, #2b1b0f, #0f172a);
       padding: 5px 10px;
       border-radius: 8px;
       margin: 5px 5px 0 0;
@@ -66,9 +66,16 @@
     <div class="card">
       <h2>About Me</h2>
       <p>
-        I am a student at the Technical University of Liberec (TUL), studying Mechatronics.
-        I enjoy combining engineering with real-world applications and hands-on work.
-      </p>
+I am a 22-year-old student at the Technical University of Liberec (TUL), currently studying Mechatronics Engineering. My academic path started at a general high school, followed by studies at CTU FNSPE in Prague, which I later did not complete. I then continued my journey at TUL, where I found a strong interest in practical engineering and applied technical systems.
+</p>
+
+<p>
+I enjoy solving problems, understanding how things work, and applying theory to real-world situations. I am particularly interested in mechanical systems, automation, and hands-on engineering work.
+</p>
+
+<p>
+Outside of engineering, I have a strong interest in animals and nature. I also enjoy staying active through sports and challenging myself both physically and mentally. I would describe myself as curious, practical, and someone who likes figuring things out rather than just learning them theoretically.
+</p>
     </div>
 
     <div class="card">
@@ -115,4 +122,15 @@
 
   </div>
 </body>
+  body::before {
+  content: "";
+  position: fixed;
+  top: -200px;
+  left: -200px;
+  width: 600px;
+  height: 600px;
+  background: rgba(249, 115, 22, 0.25);
+  filter: blur(120px);
+  z-index: -1;
+}
 </html>
