@@ -6,6 +6,10 @@
   <title>Matej Springl</title>
 
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -17,7 +21,6 @@
       overflow-x: hidden;
     }
 
-    /* ORANGE GLOW EFFECT */
     body::before {
       content: "";
       position: fixed;
@@ -33,6 +36,31 @@
     .container {
       max-width: 800px;
       padding: 60px 20px;
+    }
+
+    /* NAVBAR */
+    .nav {
+      position: sticky;
+      top: 0;
+      display: flex;
+      gap: 10px;
+      padding: 15px 0;
+      background: rgba(15, 23, 42, 0.8);
+      backdrop-filter: blur(10px);
+      margin-bottom: 30px;
+    }
+
+    .nav a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 12px;
+      background: #1e293b;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .nav a:hover {
+      background: #334155;
     }
 
     h1 {
@@ -54,11 +82,6 @@
 
     a {
       color: #f97316;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
     }
 
     .tag {
@@ -75,43 +98,31 @@
 <body>
   <div class="container">
 
+    <div class="nav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#contact">Contact</a>
+    </div>
+
     <h1>Hi, I'm Matěj Špringl 👋</h1>
     <p>Mechatronics student at TUL | Engineering & sports enthusiast</p>
 
-    <div class="card">
+    <div class="card" id="about">
       <h2>About Me</h2>
-
       <p>
-      I am a 22-year-old student at the Technical University of Liberec (TUL), currently studying Mechatronics Engineering. My academic path started at a general high school, followed by studies at CTU FNSPE in Prague, which I later did not complete. I then continued my journey at TUL, where I found a strong interest in practical engineering and applied technical systems.
+        I am a 22-year-old student at the Technical University of Liberec (TUL), studying Mechatronics Engineering. I previously studied at CTU FNSPE in Prague before continuing at TUL, where I focused more on practical engineering and applied systems.
       </p>
-
       <p>
-      I enjoy solving problems, understanding how things work, and applying theory to real-world situations. I am particularly interested in mechanical systems, automation, and hands-on engineering work.
+        I enjoy solving problems, understanding how things work, and connecting theory with real-world applications. I like engineering challenges and hands-on technical work.
       </p>
-
       <p>
-      Outside of engineering, I have a strong interest in animals and nature. I also enjoy staying active through sports and challenging myself both physically and mentally.
-      </p>
-
-    </div>
-
-    <div class="card">
-      <h2>Education</h2>
-      <p>
-        Technical University of Liberec (TUL)<br>
-        Field: Mechatronics Engineering
+        Outside of engineering, I enjoy animals, sports, and staying active.
       </p>
     </div>
 
-    <div class="card">
-      <h2>Experience</h2>
-      <p>
-        • Škoda Auto – student internship / part-time work<br>
-        • Laundry service – driver / logistics assistant
-      </p>
-    </div>
-
-    <div class="card">
+    <div class="card" id="skills">
       <h2>Skills</h2>
       <span class="tag">Engineering Basics</span>
       <span class="tag">Problem Solving</span>
@@ -119,17 +130,22 @@
       <span class="tag">Teamwork</span>
     </div>
 
-    <div class="card">
-      <h2>Hobbies</h2>
+    <div class="card" id="experience">
+      <h2>Experience</h2>
       <p>
-        • Sports (athletics, fitness, speedcubing)<br>
-        • Firefighter sport<br>
-        • Hiking & traveling<br>
-        • Social events & parties
+        • Škoda Auto – student internship / part-time work<br>
+        • Laundry service – driver / logistics assistant
       </p>
     </div>
 
-    <div class="card">
+    <div class="card" id="hobbies">
+      <h2>Hobbies</h2>
+      <p>
+        Sports (athletics, fitness, speedcubing), firefighter sport, hiking, traveling, social events, parties. I also enjoy animals and outdoor activities.
+      </p>
+    </div>
+
+    <div class="card" id="contact">
       <h2>Contact</h2>
       <p>
         Email: matej.springl@tul.cz<br>
